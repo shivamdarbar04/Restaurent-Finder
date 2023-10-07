@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Nearby Restaurants</title>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+
+
+	<style>
+		#map {
+			height: 400px;
+			width: 100%;
+		}
+
+		body {
+			background-color: #f8f9fa;
+		}
+
+		.search-container {
+			margin-top: 50px;
+		}
+
+		.restaurant-card {
+			margin: 20px 0;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand text-white" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active text-white" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active text-white" aria-current="page" href="/map">Explore Restaurents</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active text-white" aria-current="page" href="/restaurents">Restaurents in Indore</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+	<h4 class="mt-4"> hello</h4>
+	<section id="MrBeans">
+		<div class="container">
+			<div class="row ">
+				<div class="address ">
+					<h5>Near Saket Club > Saket Nagar > Indore > Madhya Pradesh > 452018</h5>
+				</div>
+
+
+
+				<div class="card border-0" style="width: 50rem;">
+					<img class="img-fluid" src="img/mrbeans.jpg" style="width: 800px;">
+					<div class="card-body">
+
+					</div>
+				</div>
+
+				<div class="card border-0" style="width: 20rem;">
+					<h2>Opening Hours</h2>
+					<p>Monday - Friday: 9:00 AM - 10:00 PM</p>
+					<p>Saturday - Sunday: 10:00 AM - 11:00 PM</p>
+				</div>
+			</div>
+			<h3>MrBeans Restaurent Indore</h3>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="card" style="width: 22rem; height: 350px; color: rgb(255, 255, 255);">
+						<div class="card-header text-dark">
+							<h6>Ratings and Reviews</h6>
+						</div>
+						<div class="card-body text-dark">
+							<p><strong>Overall Rating:</strong> 4.5</p>
+							<p><strong>#2</strong> of 715 Restaurants in Indore</p>
+							<p><strong></strong> Travellers' Choice 2023</p>
+							<h6>Ratings:</h6>
+							<li>
+								<p><strong>Food </strong> ★★★★</p>
+								<p><strong>Service:</strong> ★★★★</p>
+								<p><strong>Value:</strong> ★★★★</p>
+							</li>
+						</div>
+
+					</div>
+					<div class="card" style="width: 22rem; height: 350px; color: aliceblue;">
+						<div class="card-body text-dark">
+							<div class="card-header">
+								<h5>Details</h5>
+							</div>
+							<div class="card-body text-dark">
+								<h6>Cuisines:</h6>
+								<p>Indian, Mediterranean</p>
+
+								<h6>Special Diets:</h6>
+								<p>Vegetarian Friendly, Vegan Options, Gluten Free Options</p>
+
+								<h6>Meals:</h5>
+									<p>Dinner, Lunch, After-hours</p>
+
+							</div>
+						</div>
+					</div>
+					<div class="card" style="width: 22rem; height: 350px; color: aliceblue;">
+
+						<h5 class="card-header text-dark">Restaurant Address</h5>
+						<hr>
+						<div class="card-body section">
+							<p class="text-dark"><strong>Address:</strong> Near Saket Club > Saket Nagar > Indore >
+								Madhya Pradesh > 452018</p>
+							<p class="text-dark"><strong>Price:</strong> ₹ 700 for two</p>
+							<p class="text-dark"><strong>Payment Method:</strong> Card Accepted</p>
+							<a href="/map">
+								<button type="button" class="btn btn-dark">See Direction</button>
+							</a>
+						</div>
+					</div>
+
+				</div>
+
+	</section>
+
+
+	<hr>
+
+
+	<section id="kabelo">
+		<div class="container">
+			<div class="row ">
+				<div class="address ">
+					<h5>Kabelo > Vijay Nagar > Indore > Madhya Pradesh > 452001</h5>
+				</div>
+
+
+
+				<div class="card border-0" style="width: 50rem;">
+					<img class="img-fluid" src="img/kabelo.jpg" style="width: 800px;">
+					<div class="card-body">
+
+					</div>
+				</div>
+
+				<div class="card border-0" style="width: 20rem;">
+					<h2>Opening Hours</h2>
+					<p>Monday - Friday: 9:00 AM - 10:00 PM</p>
+					<p>Saturday - Sunday: 10:00 AM - 11:00 PM</p>
+				</div>
+			</div>
+			<h3>Kabelo Rooftop Indore</h3>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="card" style="width: 22rem; height: 350px; color: rgb(255, 255, 255);">
+						<div class="card-header text-dark">
+							<h6>Ratings and Reviews</h6>
+						</div>
+						<div class="card-body text-dark">
+							<p><strong>Overall Rating:</strong> 4.5</p>
+							<p><strong>#2</strong> of 715 Restaurants in Indore</p>
+							<p><strong></strong> Travellers' Choice 2023</p>
+							<h6>Ratings:</h6>
+							<li>
+								<p><strong>Food </strong> ★★★★</p>
+								<p><strong>Service:</strong> ★★★★</p>
+								<p><strong>Value:</strong> ★★★★</p>
+							</li>
+						</div>
+
+					</div>
+					<div class="card" style="width: 22rem; height: 350px; color: aliceblue;">
+						<div class="card-body text-dark">
+							<div class="card-header">
+								<h5>Details</h5>
+							</div>
+							<div class="card-body text-dark">
+								<h6>Cuisines:</h6>
+								<p>Indian, Mediterranean</p>
+
+								<h6>Special Diets:</h6>
+								<p>Vegetarian Friendly, Vegan Options, Gluten Free Options</p>
+
+								<h6>Meals:</h5>
+									<p>Dinner, Lunch, After-hours</p>
+
+							</div>
+						</div>
+					</div>
+					<div class="card" style="width: 22rem; height: 350px; color: aliceblue;">
+
+						<h5 class="card-header text-dark">Restaurant Address</h5>
+						<hr>
+						<div class="card-body section">
+							<p class="text-dark"><strong>Address:</strong> Kabelo > Vijay Nagar > Indore > Madhya
+								Pradesh > 452001</p>
+							<p class="text-dark"><strong>Price:</strong> ₹ 700 for two</p>
+							<p class="text-dark"><strong>Payment Method:</strong> Card Accepted</p>
+							<a href="/map">
+								<button type="button" class="btn btn-dark">See Direction</button>
+							</a>
+						</div>
+					</div>
+
+				</div>
+
+	</section>
+
+
+	<section id="little-italy">
+		<div class="container">
+			<div class="row ">
+				<div class="address">
+					<h5> Brilliant Convention Centre > near Lifecare Hospital > Vijay Nagar > Indore > Madhya Pradesh >
+						452010</h5>
+				</div>
+
+
+
+				<div class="card border-0" style="width: 50rem;">
+					<img class="img-fluid" src="img/little-italy.jpg" style="width: 800px;">
+					<div class="card-body">
+
+					</div>
+				</div>
+
+				<div class="card border-0" style="width: 20rem;">
+					<h2>Opening Hours</h2>
+					<p>Monday - Friday: 9:00 AM - 10:00 PM</p>
+					<p>Saturday - Sunday: 10:00 AM - 11:00 PM</p>
+				</div>
+			</div>
+			<h3>Little-Italy Indore</h3>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="card" style="width: 22rem; height: 350px; color: rgb(255, 255, 255);">
+						<div class="card-header text-dark">
+							<h6>Ratings and Reviews</h6>
+						</div>
+						<div class="card-body text-dark">
+							<p><strong>Overall Rating:</strong> 4.5</p>
+							<p><strong>#2</strong> of 715 Restaurants in Indore</p>
+							<p><strong></strong> Travellers' Choice 2023</p>
+							<h6>Ratings:</h6>
+							<li>
+								<p><strong>Food </strong> ★★★★</p>
+								<p><strong>Service:</strong> ★★★★</p>
+								<p><strong>Value:</strong> ★★★★</p>
+							</li>
+						</div>
+
+					</div>
+					<div class="card" style="width: 22rem; height: 350px; color: aliceblue;">
+						<div class="card-body text-dark">
+							<div class="card-header">
+								<h5>Details</h5>
+							</div>
+							<div class="card-body text-dark">
+								<h6>Cuisines:</h6>
+								<p>Indian, Mediterranean</p>
+
+								<h6>Special Diets:</h6>
+								<p>Vegetarian Friendly, Vegan Options, Gluten Free Options</p>
+
+								<h6>Meals:</h5>
+									<p>Dinner, Lunch, After-hours</p>
+
+							</div>
+						</div>
+					</div>
+					<div class="card" style="width: 22rem; height: 350px; color: aliceblue;">
+
+						<h5 class="card-header text-dark">Restaurant Address</h5>
+						<hr>
+						<div class="card-body section">
+							<p class="text-dark"><strong>Address:</strong> Brilliant Convention Centre > near Lifecare
+								Hospital > Vijay Nagar > Indore > Madhya Pradesh > 452010</p>
+							<p class="text-dark"><strong>Price:</strong> ₹ 700 for two</p>
+							<p class="text-dark"><strong>Payment Method:</strong> Card Accepted</p>
+							<a href="/map">
+								<button type="button" class="btn btn-dark">See Direction</button>
+							</a>
+						</div>
+					</div>
+
+				</div>
+
+	</section>
+
+	<section id="shreemaya">
+		<div class="container">
+			<div class="row ">
+				<div class="address ">
+					<h3>Shreemaya</h3>
+					<h5>AB Road > near Press Complex > Press Complex > Indore > Madhya Pradesh > 452008</h5>
+				</div>
+
+
+
+				<div class="card border-0" style="width: 50rem;">
+					<img class="img-fluid" src="img/shreemaya.jpg" style="width: 800px;">
+					<div class="card-body">
+
+					</div>
+				</div>
+
+				<div class="card border-0" style="width: 20rem;">
+					<h2>Opening Hours</h2>
+					<p>Monday - Friday: 9:00 AM - 10:00 PM</p>
+					<p>Saturday - Sunday: 10:00 AM - 11:00 PM</p>
+				</div>
+			</div>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="card" style="width: 22rem; height: 350px; color: rgb(255, 255, 255);">
+						<div class="card-header text-dark">
+							<h6>Ratings and Reviews</h6>
+						</div>
+						<div class="card-body text-dark">
+							<p><strong>Overall Rating:</strong> 4.5</p>
+							<p><strong>#2</strong> of 715 Restaurants in Indore</p>
+							<p><strong></strong> Travellers' Choice 2023</p>
+							<h6>Ratings:</h6>
+							<li>
+								<p><strong>Food </strong> ★★★★</p>
+								<p><strong>Service:</strong> ★★★★</p>
+								<p><strong>Value:</strong> ★★★★</p>
+							</li>
+						</div>
+
+					</div>
+					<div class="card" style="width: 22rem; height: 350px; color: aliceblue;">
+						<div class="card-body text-dark">
+							<div class="card-header">
+								<h5>Details</h5>
+							</div>
+							<div class="card-body text-dark">
+								<h6>Cuisines:</h6>
+								<p>Indian, Mediterranean</p>
+
+								<h6>Special Diets:</h6>
+								<p>Vegetarian Friendly, Vegan Options, Gluten Free Options</p>
+
+								<h6>Meals:</h5>
+									<p>Dinner, Lunch, After-hours</p>
+
+							</div>
+						</div>
+					</div>
+					<div class="card" style="width: 22rem; height: 350px; color: aliceblue;">
+
+						<h5 class="card-header text-dark">Restaurant Address</h5>
+						<hr>
+						<div class="card-body section">
+							<p class="text-dark"><strong>Address:</strong> AB Road > near Press Complex > Press Complex
+								> Indore > Madhya Pradesh > 452008</p>
+							<p class="text-dark"><strong>Price:</strong> ₹ 700 for two</p>
+							<p class="text-dark"><strong>Payment Method:</strong> Card Accepted</p>
+							<a href="/map">
+								<button type="button" class="btn btn-dark">See Direction</button>
+							</a>
+						</div>
+					</div>
+
+				</div>
+
+	</section>
+
+	<section id="effotel">
+		<div class="container">
+			<div class="row ">
+				<div class="address ">
+
+					<h5>Plot No. 10 > C/ C.A > Scheme No:94 > Sector C > Scheme 94 Sector CA > Indore > Madhya Pradesh >
+						452010</h5>
+				</div>
+
+
+
+				<div class="card border-0" style="width: 50rem;">
+					<img class="img-fluid" src="img/effotell.jpg" style="width: 800px;">
+					<div class="card-body">
+
+					</div>
+				</div>
+
+				<div class="card border-0" style="width: 20rem;">
+					<h2>Opening Hours</h2>
+					<p>Monday - Friday: 9:00 AM - 10:00 PM</p>
+					<p>Saturday - Sunday: 10:00 AM - 11:00 PM</p>
+				</div>
+			</div>
+			<h3>Effotel By Sayaji</h3>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="card" style="width: 22rem; height: 350px; color: rgb(255, 255, 255);">
+						<div class="card-header text-dark">
+							<h6>Ratings and Reviews</h6>
+						</div>
+						<div class="card-body text-dark">
+							<p><strong>Overall Rating:</strong> 4.5</p>
+							<p><strong>#2</strong> of 715 Restaurants in Indore</p>
+							<p><strong></strong> Travellers' Choice 2023</p>
+							<h6>Ratings:</h6>
+							<li>
+								<p><strong>Food </strong> ★★★★★</p>
+								<p><strong>Service:</strong> ★★★★★</p>
+								<p><strong>Value:</strong> ★★★★★</p>
+							</li>
+						</div>
+
+					</div>
+					<div class="card" style="width: 22rem; height: 350px; color: aliceblue;">
+						<div class="card-body text-dark">
+							<div class="card-header">
+								<h5>Details</h5>
+							</div>
+							<div class="card-body text-dark">
+								<h6>Cuisines:</h6>
+								<p>Indian, Mediterranean</p>
+
+								<h6>Special Diets:</h6>
+								<p>Vegetarian Friendly, Vegan Options, Gluten Free Options</p>
+
+								<h6>Meals:</h5>
+									<p>Dinner, Lunch, After-hours</p>
+
+							</div>
+						</div>
+					</div>
+					<div class="card" style="width: 22rem; height: 350px; color: aliceblue;">
+
+						<h5 class="card-header text-dark">Restaurant Address</h5>
+						<hr>
+						<div class="card-body section">
+							<p class="text-dark">
+								<strPlot No. 10> C/ C.A > Scheme No:94 > Sector C > Scheme 94 Sector CA > Indore >
+									Madhya Pradesh > 452010
+							</p>
+							<p class="text-dark"><strong>Price:</strong> ₹ 700 for two</p>
+							<p class="text-dark"><strong>Payment Method:</strong> Card Accepted</p>
+							<a href="/map">
+								<button type="button" class="btn btn-dark">See Direction</button>
+							</a>
+						</div>
+					</div>
+
+				</div>
+
+	</section>
+
+	<section id="kake-di-hatti">
+		<div class="container">
+			<div class="row ">
+				<div class="address ">
+					<h5>Nm tower > opp. sudhashree sarees > Near 56 Dukan > Indore > Madhya Pradesh > 452001</h5>
+				</div>
+
+
+
+				<div class="card border-0" style="width: 50rem;">
+					<img class="img-fluid" src="img/kake-di-hatti.jpg" style="width: 800px;">
+					<div class="card-body">
+
+					</div>
+				</div>
+
+				<div class="card border-0" style="width: 20rem;">
+					<h2>Opening Hours</h2>
+					<p>Monday - Friday: 9:00 AM - 10:00 PM</p>
+					<p>Saturday - Sunday: 10:00 AM - 11:00 PM</p>
+				</div>
+			</div>
+			<h3>Kake-Di-Hatti Family Restaurent Indore</h3>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="card" style="width: 22rem; height: 350px; color: rgb(255, 255, 255);">
+						<div class="card-header text-dark">
+							<h6>Ratings and Reviews</h6>
+						</div>
+						<div class="card-body text-dark">
+							<p><strong>Overall Rating:</strong> 4.5</p>
+							<p><strong>#2</strong> of 715 Restaurants in Indore</p>
+							<p><strong></strong> Travellers' Choice 2023</p>
+							<h6>Ratings:</h6>
+							<li>
+								<p><strong>Food </strong> ★★★★</p>
+								<p><strong>Service:</strong> ★★★★</p>
+								<p><strong>Value:</strong> ★★★★</p>
+							</li>
+						</div>
+
+					</div>
+					<div class="card" style="width: 22rem; height: 350px; color: aliceblue;">
+						<div class="card-body text-dark">
+							<div class="card-header">
+								<h5>Details</h5>
+							</div>
+							<div class="card-body text-dark">
+								<h6>Cuisines:</h6>
+								<p>Indian, Mediterranean</p>
+
+								<h6>Special Diets:</h6>
+								<p>Vegetarian Friendly, Vegan Options, Gluten Free Options</p>
+
+								<h6>Meals:</h5>
+									<p>Dinner, Lunch, After-hours</p>
+
+							</div>
+						</div>
+					</div>
+					<div class="card" style="width: 22rem; height: 350px; color: aliceblue;">
+
+						<h5 class="card-header text-dark">Restaurant Address</h5>
+						<hr>
+						<div class="card-body section">
+							<p class="text-dark"><strong>Address:</strong> Nm tower > opp. sudhashree sarees > Near 56
+								Dukan > Indore > Madhya Pradesh > 452001</p>
+							<p class="text-dark"><strong>Price:</strong> ₹ 700 for two</p>
+							<p class="text-dark"><strong>Payment Method:</strong> Card Accepted</p>
+							<a href="/map">
+								<button type="button" class="btn btn-dark">See Direction</button>
+							</a>
+						</div>
+					</div>
+
+				</div>
+
+	</section>
+
+	<section id="bollywood-theka">
+		<div class="container">
+			<div class="row ">
+				<div class="address ">
+					<h5>Infiniti Hotel and Spa > 1C/CA > Ring Road > Scheme No 94 Sector Ea > Indore > Madhya Pradesh >
+						452010</h5>
+				</div>
+				<div class="card border-0" style="width: 50rem;">
+					<img class="img-fluid" src="img/bollywood-theka.jpg" style="width: 800px;">
+					<div class="card-body">
+
+					</div>
+				</div>
+
+				<div class="card border-0" style="width: 20rem;">
+					<h2>Opening Hours</h2>
+					<p>Monday - Friday: 9:00 AM - 10:00 PM</p>
+					<p>Saturday - Sunday: 10:00 AM - 11:00 PM</p>
+				</div>
+			</div>
+			<h3>Bollywood-Theka Restaurent Indore</h3>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="card" style="width: 22rem; height: 350px; color: rgb(255, 255, 255);">
+						<div class="card-header text-dark">
+							<h6>Ratings and Reviews</h6>
+						</div>
+						<div class="card-body text-dark">
+							<p><strong>Overall Rating:</strong> 4.5</p>
+							<p><strong>#2</strong> of 715 Restaurants in Indore</p>
+							<p><strong></strong> Travellers' Choice 2023</p>
+							<h6>Ratings:</h6>
+							<li>
+								<p><strong>Food </strong> ★★★★</p>
+								<p><strong>Service:</strong> ★★★★</p>
+								<p><strong>Value:</strong> ★★★★</p>
+							</li>
+						</div>
+
+					</div>
+					<div class="card" style="width: 22rem; height: 350px; color: aliceblue;">
+						<div class="card-body text-dark">
+							<div class="card-header">
+								<h5>Details</h5>
+							</div>
+							<div class="card-body text-dark">
+								<h6>Cuisines:</h6>
+								<p>Indian, Mediterranean</p>
+
+								<h6>Special Diets:</h6>
+								<p>Vegetarian Friendly, Vegan Options, Gluten Free Options</p>
+
+								<h6>Meals:</h5>
+									<p>Dinner, Lunch, After-hours</p>
+
+							</div>
+						</div>
+					</div>
+					<div class="card" style="width: 22rem; height: 350px; color: aliceblue;">
+
+						<h5 class="card-header text-dark">Restaurant Address</h5>
+						<hr>
+						<div class="card-body section">
+							<p class="text-dark"><strong>Address:</strong> Infiniti Hotel and Spa > 1C/CA > Ring Road >
+								Scheme No 94 Sector Ea > Indore > Madhya Pradesh > 452010</p>
+							<p class="text-dark"><strong>Price:</strong> ₹ 700 for two</p>
+							<p class="text-dark"><strong>Payment Method:</strong> Card Accepted</p>
+							<a href="/map">
+								<button type="button" class="btn btn-dark">See Direction</button>
+							</a>
+						</div>
+					</div>
+
+				</div>
+
+	</section>
+
+
+</body>
+
+</html>

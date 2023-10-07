@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="ISO-8859-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+	<title>Famous Cafe's Indore</title>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+
+	
+</head>
+
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand text-white" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active text-white" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active text-white" aria-current="page" href="/map">Explore Restaurents</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active text-white" aria-current="page" href="/restaurents">Restaurents in Indore</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+	
+	<section class="mt-5" id="farzi">
+		<div class="container">
+			<div class="row ">
+				<div class="address ">
+					<h5>Apollo premier building > near sajan prabha > Vijay Nagar Square > Indore > Madhya Pradesh >
+						452010</h5>
+				</div>
+
+
+
+				<div class="card border-0" style="width: 50rem;">
+					<img class="img-fluid" src="img/farzi-cafe.jpg" style="width: 800px;">
+					<div class="card-body">
+
+					</div>
+				</div>
+
+				<div class="card border-0" style="width: 20rem;">
+					<h2>Opening Hours</h2>
+					<p>Monday - Friday: 9:00 AM - 10:00 PM</p>
+					<p>Saturday - Sunday: 10:00 AM - 11:00 PM</p>
+				</div>
+			</div>
+			<h3>Farzi-Cafe</h3>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="card" style="width: 22rem; height: 350px; color: rgb(255, 255, 255);">
+						<div class="card-header text-dark">
+							<h6>Ratings and Reviews</h6>
+						</div>
+						<div class="card-body text-dark">
+							<p><strong>Overall Rating:</strong> 4.5</p>
+							<p><strong>#2</strong> of 715 Restaurants in Indore</p>
+							<p><strong></strong> Travellers' Choice 2023</p>
+							<h6>Ratings:</h6>
+							<li>
+								<p><strong>Food </strong> ★★★★</p>
+								<p><strong>Service:</strong> ★★★★</p>
+								<p><strong>Value:</strong> ★★★★</p>
+							</li>
+						</div>
+
+					</div>
+					<div class="card" style="width: 22rem; height: 350px; color: aliceblue;">
+						<div class="card-body text-dark">
+							<div class="card-header">
+								<h5>Details</h5>
+							</div>
+							<div class="card-body text-dark">
+								<h6>Cuisines:</h6>
+								<p>Indian, Mediterranean</p>
+
+								<h6>Special Diets:</h6>
+								<p>Vegetarian Friendly, Vegan Options, Gluten Free Options</p>
+
+								<h6>Meals:</h5>
+									<p>Dinner, Lunch, After-hours</p>
+
+							</div>
+						</div>
+					</div>
+					<div class="card" style="width: 22rem; height: 350px; color: aliceblue;">
+
+						<h5 class="card-header text-dark">Restaurant Address</h5>
+						<hr>
+						<div class="card-body section">
+							<p class="text-dark"><strong>Address:</strong> Apollo premier building > near sajan prabha >
+								Vijay Nagar Square > Indore > Madhya Pradesh >
+								452010</p>
+							<p class="text-dark"><strong>Price:</strong> ₹ 700 for two</p>
+							<p class="text-dark"><strong>Payment Method:</strong> Card Accepted</p>
+							<a href="/map">
+								<button type="button" class="btn btn-dark">See Direction</button>
+							</a>
+						</div>
+					</div>
+
+				</div>
+
+	</section>
+
+	<section id="jail">
+		<div class="container">
+			<div class="row ">
+				<div class="address ">
+					<h5>Shop No - 45 > Scheme Number 78 > Part II > Vijay Nagar > Indore > Madhya Pradesh > 452010</h5>
+				</div>
+
+
+
+				<div class="card border-0" style="width: 50rem;">
+					<img class="img-fluid" src="img/Yawun-cafe.jpg" style="width: 800px;">
+					<div class="card-body">
+
+					</div>
+				</div>
+
+				<div class="card border-0" style="width: 20rem;">
+					<h2>Opening Hours</h2>
+					<p>Monday - Friday: 9:00 AM - 10:00 PM</p>
+					<p>Saturday - Sunday: 10:00 AM - 11:00 PM</p>
+				</div>
+			</div>
+			<h3>Yawun-Cafe</h3>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="card" style="width: 22rem; height: 350px; color: rgb(255, 255, 255);">
+						<div class="card-header text-dark">
+							<h6>Ratings and Reviews</h6>
+						</div>
+						<div class="card-body text-dark">
+							<p><strong>Overall Rating:</strong> 4.5</p>
+							<p><strong>#2</strong> of 715 Restaurants in Indore</p>
+							<p><strong></strong> Travellers' Choice 2023</p>
+							<h6>Ratings:</h6>
+							<li>
+								<p><strong>Food </strong> ★★★★</p>
+								<p><strong>Service:</strong> ★★★★</p>
+								<p><strong>Value:</strong> ★★★★</p>
+							</li>
+						</div>
+
+					</div>
+					<div class="card" style="width: 22rem; height: 350px; color: aliceblue;">
+						<div class="card-body text-dark">
+							<div class="card-header">
+								<h5>Details</h5>
+							</div>
+							<div class="card-body text-dark">
+								<h6>Cuisines:</h6>
+								<p>Indian, Mediterranean</p>
+
+								<h6>Special Diets:</h6>
+								<p>Vegetarian Friendly, Vegan Options, Gluten Free Options</p>
+
+								<h6>Meals:</h5>
+									<p>Dinner, Lunch, After-hours</p>
+
+							</div>
+						</div>
+					</div>
+					<div class="card" style="width: 22rem; height: 350px; color: aliceblue;">
+
+						<h5 class="card-header text-dark">Restaurant Address</h5>
+						<hr>
+						<div class="card-body section">
+							<p class="text-dark"><strong>Address:</strong> Shop No - 45 > Scheme Number 78 > Part II >
+								Vijay Nagar > Indore > Madhya Pradesh > 452010</p>
+							<p class="text-dark"><strong>Price:</strong> ₹ 700 for two</p>
+							<p class="text-dark"><strong>Payment Method:</strong> Card Accepted</p>
+							<a href="/map">
+								<button type="button" class="btn btn-dark">See Direction</button>
+							</a>
+						</div>
+					</div>
+
+				</div>
+
+	</section>
+
+	<section id="cafe-tereza">
+		<div class="container">
+			<div class="row ">
+				<div class="address ">
+					<h5>10th Floor > Airen Heights > AB Road > opp. c21 mall > Behind Pakiza Mall > Indore > Madhya
+						Pradesh > 452010</h5>
+				</div>
+
+
+
+				<div class="card border-0" style="width: 50rem;">
+					<img class="img-fluid" src="img/cafe-terezza.jpg" style="width: 800px;">
+					<div class="card-body">
+
+					</div>
+				</div>
+
+				<div class="card border-0" style="width: 20rem;">
+					<h2>Opening Hours</h2>
+					<p>Monday - Friday: 9:00 AM - 10:00 PM</p>
+					<p>Saturday - Sunday: 10:00 AM - 11:00 PM</p>
+				</div>
+			</div>
+			<h3>Cafe-Terezza</h3>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="card" style="width: 22rem; height: 350px; color: rgb(255, 255, 255);">
+						<div class="card-header text-dark">
+							<h6>Ratings and Reviews</h6>
+						</div>
+						<div class="card-body text-dark">
+							<p><strong>Overall Rating:</strong> 4.5</p>
+							<p><strong>#2</strong> of 715 Restaurants in Indore</p>
+							<p><strong></strong> Travellers' Choice 2023</p>
+							<h6>Ratings:</h6>
+							<li>
+								<p><strong>Food </strong> ★★★★</p>
+								<p><strong>Service:</strong> ★★★★</p>
+								<p><strong>Value:</strong> ★★★★</p>
+							</li>
+						</div>
+
+					</div>
+					<div class="card" style="width: 22rem; height: 350px; color: aliceblue;">
+						<div class="card-body text-dark">
+							<div class="card-header">
+								<h5>Details</h5>
+							</div>
+							<div class="card-body text-dark">
+								<h6>Cuisines:</h6>
+								<p>Indian, Mediterranean</p>
+
+								<h6>Special Diets:</h6>
+								<p>Vegetarian Friendly, Vegan Options, Gluten Free Options</p>
+
+								<h6>Meals:</h5>
+									<p>Dinner, Lunch, After-hours</p>
+
+							</div>
+						</div>
+					</div>
+					<div class="card" style="width: 22rem; height: 350px; color: aliceblue;">
+
+						<h5 class="card-header text-dark">Restaurant Address</h5>
+						<hr>
+						<div class="card-body section">
+							<p class="text-dark"><strong>Address:</strong> 10th Floor > Airen Heights > AB Road > opp.
+								c21 mall > Behind Pakiza Mall > Indore > Madhya Pradesh > 452010</p>
+							<p class="text-dark"><strong>Price:</strong> ₹ 700 for two</p>
+							<p class="text-dark"><strong>Payment Method:</strong> Card Accepted</p>
+							<a href="/map">
+								<button type="button" class="btn btn-dark">See Direction</button>
+							</a>
+						</div>
+					</div>
+
+				</div>
+
+	</section>
+
+
+	<section id="freito">
+		<div class="container">
+			<div class="row ">
+				<div class="address ">
+					<h5>343-344 > Vijay Nagar Square > Near Country Inn > Scheme 54 PU4 > Indore > Madhya Pradesh >
+						452010</h5>
+				</div>
+
+
+
+				<div class="card border-0" style="width: 50rem;">
+					<img class="img-fluid" src="img/freito.jpg" style="width: 800px;">
+					<div class="card-body">
+
+					</div>
+				</div>
+
+				<div class="card border-0" style="width: 20rem;">
+					<h2>Opening Hours</h2>
+					<p>Monday - Friday: 9:00 AM - 10:00 PM</p>
+					<p>Saturday - Sunday: 10:00 AM - 11:00 PM</p>
+				</div>
+			</div>
+			<h3>Freito-Cafe</h3>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="card" style="width: 22rem; height: 350px; color: rgb(255, 255, 255);">
+						<div class="card-header text-dark">
+							<h6>Ratings and Reviews</h6>
+						</div>
+						<div class="card-body text-dark">
+							<p><strong>Overall Rating:</strong> 4.5</p>
+							<p><strong>#2</strong> of 715 Restaurants in Indore</p>
+							<p><strong></strong> Travellers' Choice 2023</p>
+							<h6>Ratings:</h6>
+							<li>
+								<p><strong>Food </strong> ★★★★</p>
+								<p><strong>Service:</strong> ★★★★</p>
+								<p><strong>Value:</strong> ★★★★</p>
+							</li>
+						</div>
+
+					</div>
+					<div class="card" style="width: 22rem; height: 350px; color: aliceblue;">
+						<div class="card-body text-dark">
+							<div class="card-header">
+								<h5>Details</h5>
+							</div>
+							<div class="card-body text-dark">
+								<h6>Cuisines:</h6>
+								<p>Indian, Mediterranean</p>
+
+								<h6>Special Diets:</h6>
+								<p>Vegetarian Friendly, Vegan Options, Gluten Free Options</p>
+
+								<h6>Meals:</h5>
+									<p>Dinner, Lunch, After-hours</p>
+
+							</div>
+						</div>
+					</div>
+					<div class="card" style="width: 22rem; height: 350px; color: aliceblue;">
+
+						<h5 class="card-header text-dark">Restaurant Address</h5>
+						<hr>
+						<div class="card-body section">
+							<p class="text-dark"><strong>Address:</strong> 343-344 > Vijay Nagar Square > Near Country
+								Inn > Scheme 54 PU4 > Indore > Madhya Pradesh >
+								452010</p>
+							<p class="text-dark"><strong>Price:</strong> ₹ 700 for two</p>
+							<p class="text-dark"><strong>Payment Method:</strong> Card Accepted</p>
+							<a href="/map">
+								<button type="button" class="btn btn-dark">See Direction</button>
+							</a>
+						</div>
+					</div>
+
+				</div>
+
+	</section>
+
+
+	<section id="MoonRoe">
+		<div class="container">
+			<div class="row ">
+				<div class="address ">
+					<h5>Gold Stone Building > 3/5 > near 56 Shops > New Palasia > Indore > Madhya Pradesh > 452001</h5>
+				</div>
+
+
+
+				<div class="card border-0" style="width: 50rem;">
+					<img class="img-fluid" src="img/monroe.jpg" style="width: 800px;">
+					<div class="card-body">
+
+					</div>
+				</div>
+
+				<div class="card border-0" style="width: 20rem;">
+					<h2>Opening Hours</h2>
+					<p>Monday - Friday: 9:00 AM - 10:00 PM</p>
+					<p>Saturday - Sunday: 10:00 AM - 11:00 PM</p>
+				</div>
+			</div>
+			<h3>Moonroe Cafe</h3>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="card" style="width: 22rem; height: 350px; color: rgb(255, 255, 255);">
+						<div class="card-header text-dark">
+							<h6>Ratings and Reviews</h6>
+						</div>
+						<div class="card-body text-dark">
+							<p><strong>Overall Rating:</strong> 4.5</p>
+							<p><strong>#2</strong> of 715 Restaurants in Indore</p>
+							<p><strong></strong> Travellers' Choice 2023</p>
+							<h6>Ratings:</h6>
+							<li>
+								<p><strong>Food </strong> ★★★★</p>
+								<p><strong>Service:</strong> ★★★★</p>
+								<p><strong>Value:</strong> ★★★★</p>
+							</li>
+						</div>
+
+					</div>
+					<div class="card" style="width: 22rem; height: 350px; color: aliceblue;">
+						<div class="card-body text-dark">
+							<div class="card-header">
+								<h5>Details</h5>
+							</div>
+							<div class="card-body text-dark">
+								<h6>Cuisines:</h6>
+								<p>Indian, Mediterranean</p>
+
+								<h6>Special Diets:</h6>
+								<p>Vegetarian Friendly, Vegan Options, Gluten Free Options</p>
+
+								<h6>Meals:</h5>
+									<p>Dinner, Lunch, After-hours</p>
+
+							</div>
+						</div>
+					</div>
+					<div class="card" style="width: 22rem; height: 350px; color: aliceblue;">
+
+						<h5 class="card-header text-dark">Restaurant Address</h5>
+						<hr>
+						<div class="card-body section">
+							<p class="text-dark"><strong>Address:</strong> Gold Stone Building > 3/5 > near 56 Shops >
+								New Palasia > Indore > Madhya Pradesh > 452001</p>
+							<p class="text-dark"><strong>Price:</strong> ₹ 700 for two</p>
+							<p class="text-dark"><strong>Payment Method:</strong> Card Accepted</p>
+							<a href="/map">
+								<button type="button" class="btn btn-dark">See Direction</button>
+							</a>
+						</div>
+					</div>
+
+				</div>
+
+	</section>
+
+
+	<section id="Oakaz">
+		<div class="container">
+			<div class="row ">
+				<div class="address ">
+					<h5>Geeta Bhawan square 301 Dil Pasand Square > 164 Kanchan Bagh > South Tukoganj > Indore > Madhya
+						Pradesh > 452001</h5>
+				</div>
+
+
+
+				<div class="card border-0" style="width: 50rem;">
+					<img class="img-fluid" src="img/Oakaz.jpg" style="width: 800px;">
+					<div class="card-body">
+
+					</div>
+				</div>
+
+				<div class="card border-0" style="width: 20rem;">
+					<h2>Opening Hours</h2>
+					<p>Monday - Friday: 9:00 AM - 10:00 PM</p>
+					<p>Saturday - Sunday: 10:00 AM - 11:00 PM</p>
+				</div>
+			</div>
+			<h3>Oakaz Cafe</h3>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="card" style="width: 22rem; height: 350px; color: rgb(255, 255, 255);">
+						<div class="card-header text-dark">
+							<h6>Ratings and Reviews</h6>
+						</div>
+						<div class="card-body text-dark">
+							<p><strong>Overall Rating:</strong> 4.5</p>
+							<p><strong>#2</strong> of 715 Restaurants in Indore</p>
+							<p><strong></strong> Travellers' Choice 2023</p>
+							<h6>Ratings:</h6>
+							<li>
+								<p><strong>Food </strong> ★★★★</p>
+								<p><strong>Service:</strong> ★★★★</p>
+								<p><strong>Value:</strong> ★★★★</p>
+							</li>
+						</div>
+
+					</div>
+					<div class="card" style="width: 22rem; height: 350px; color: aliceblue;">
+						<div class="card-body text-dark">
+							<div class="card-header">
+								<h5>Details</h5>
+							</div>
+							<div class="card-body text-dark">
+								<h6>Cuisines:</h6>
+								<p>Indian, Mediterranean</p>
+
+								<h6>Special Diets:</h6>
+								<p>Vegetarian Friendly, Vegan Options, Gluten Free Options</p>
+
+								<h6>Meals:</h5>
+									<p>Dinner, Lunch, After-hours</p>
+
+							</div>
+						</div>
+					</div>
+					<div class="card" style="width: 22rem; height: 350px; color: aliceblue;">
+
+						<h5 class="card-header text-dark">Restaurant Address</h5>
+						<hr>
+						<div class="card-body section">
+							<p class="text-dark"><strong>Address:</strong> Geeta Bhawan square 301 Dil Pasand Square >
+								164 Kanchan Bagh > South Tukoganj > Indore > Madhya Pradesh > 452001</p>
+							<p class="text-dark"><strong>Price:</strong> ₹ 700 for two</p>
+							<p class="text-dark"><strong>Payment Method:</strong> Card Accepted</p>
+							<a href="/map">
+								<button type="button" class="btn btn-dark">See Direction</button>
+							</a>
+						</div>
+					</div>
+
+				</div>
+
+	</section>
+
+	<section id="fire-smoke">
+		<div class="container">
+			<div class="row ">
+				<div class="address ">
+					<h5>At Jalsa Banquets & Resorts > 1 > Jhalaria Road > off By-pass Road > near Shishukunj School >
+						Nipania > Indore > Madhya Pradesh > 452010</h5>
+				</div>
+
+
+
+				<div class="card border-0" style="width: 50rem;">
+					<img class="img-fluid" src="img/fireandsmoke.jpg" style="width: 800px;">
+					<div class="card-body">
+
+					</div>
+				</div>
+
+				<div class="card border-0" style="width: 20rem;">
+					<h2>Opening Hours</h2>
+					<p>Monday - Friday: 9:00 AM - 10:00 PM</p>
+					<p>Saturday - Sunday: 10:00 AM - 11:00 PM</p>
+				</div>
+			</div>
+			<h3>Fire-And-Smoke Cafe</h3>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="card" style="width: 22rem; height: 350px; color: rgb(255, 255, 255);">
+						<div class="card-header text-dark">
+							<h6>Ratings and Reviews</h6>
+						</div>
+						<div class="card-body text-dark">
+							<p><strong>Overall Rating:</strong> 4.5</p>
+							<p><strong>#2</strong> of 715 Restaurants in Indore</p>
+							<p><strong></strong> Travellers' Choice 2023</p>
+							<h6>Ratings:</h6>
+							<li>
+								<p><strong>Food </strong> ★★★★</p>
+								<p><strong>Service:</strong> ★★★★</p>
+								<p><strong>Value:</strong> ★★★★</p>
+							</li>
+						</div>
+
+					</div>
+					<div class="card" style="width: 22rem; height: 350px; color: aliceblue;">
+						<div class="card-body text-dark">
+							<div class="card-header">
+								<h5>Details</h5>
+							</div>
+							<div class="card-body text-dark">
+								<h6>Cuisines:</h6>
+								<p>Indian, Mediterranean</p>
+
+								<h6>Special Diets:</h6>
+								<p>Vegetarian Friendly, Vegan Options, Gluten Free Options</p>
+
+								<h6>Meals:</h5>
+									<p>Dinner, Lunch, After-hours</p>
+
+							</div>
+						</div>
+					</div>
+					<div class="card" style="width: 22rem; height: 350px; color: aliceblue;">
+
+						<h5 class="card-header text-dark">Restaurant Address</h5>
+						<hr>
+						<div class="card-body section">
+							<p class="text-dark"><strong>Address:</strong> At Jalsa Banquets & Resorts > 1 > Jhalaria
+								Road > off By-pass Road > near Shishukunj School >
+								Nipania > Indore > Madhya Pradesh > 452010</p>
+							<p class="text-dark"><strong>Price:</strong> ₹ 700 for two</p>
+							<p class="text-dark"><strong>Payment Method:</strong> Card Accepted</p>
+							<a href="/map">
+								<button type="button" class="btn btn-dark">See Direction</button>
+							</a>
+						</div>
+					</div>
+
+				</div>
+
+	</section>
+
+	
+</body>
+
+</html>
